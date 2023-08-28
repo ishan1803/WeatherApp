@@ -42,4 +42,5 @@ const server = http.createServer((req, res) => {
   }
 });
 
-server.listen(8000, "127.0.0.1");
+const PORT = process.env.PORT || 8000;
+server.listen(PORT, "127.0.0.1");
